@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rdkhomesolutions.website", "rdkhomesolutions.website\rdkhomesolutions.website.csproj", "{70440052-9B59-45AB-A3D2-C019893FD3BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rdkhomesolutions.website", "rdkhomesolutions.website\rdkhomesolutions.website.csproj", "{1BE0683C-7664-410C-941F-118516C73063}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{70440052-9B59-45AB-A3D2-C019893FD3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70440052-9B59-45AB-A3D2-C019893FD3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70440052-9B59-45AB-A3D2-C019893FD3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70440052-9B59-45AB-A3D2-C019893FD3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE0683C-7664-410C-941F-118516C73063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE0683C-7664-410C-941F-118516C73063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE0683C-7664-410C-941F-118516C73063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE0683C-7664-410C-941F-118516C73063}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1CB235B8-10D9-4456-8412-264E8437C5A9}
+		SolutionGuid = {6700B991-7C9E-4C27-81EF-684160626E5B}
 	EndGlobalSection
 EndGlobal
