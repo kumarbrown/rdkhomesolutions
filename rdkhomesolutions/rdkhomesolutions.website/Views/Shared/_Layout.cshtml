@@ -13,8 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="~/Content/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    @*<link type="text/css" rel="stylesheet" href="~/Content/css/font-awesome.css" />*@
+    <link type="text/css" rel="stylesheet" href="~/Content/css/font-awesome.css" />
     <link type="text/css" rel="stylesheet" href="~/Content/css/media.css" />
     <link type="text/css" rel="stylesheet" href="~/Content/css/owl.carousel.css" />
     <link type="text/css" rel="stylesheet" href="~/Content/css/owl.theme.css" />
@@ -49,11 +48,11 @@
                         <div class="container">
                             <div class="logo clearfix">
                                 <!-- insert header logo here -->
-                                <a href="index.html" id="logo"><img class="img-responsive" src="~/Content/images/rdkhomesolutions-logo.png" alt="" /></a>
+                                <a href="index.html" id="logo"><img class="img-responsive" src="~/Content/images/RDKHomeSolutions-logo.png" alt="" /></a>
                             </div>
                             <div class="contacts_block">
                                 <!-- edit header address and phone number here -->
-                                <div class="tabLine">info@rdkhomesolutions.com</div>
+                                <div class="tabLine">info@RDKHomeSolutions.com</div>
                                 <div class="phoneNo styler_color"><i class="fa fa-phone"></i> 937.701.0088</div>
                                 <div class="clearfix"></div>
                             </div>
@@ -72,6 +71,7 @@
                                         <ul class="nav nav-pills">
                                             <!-- edit navigation menu -->
                                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("HOME", "Index", new { controller = "Home" })</li>
+                                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">@Html.ActionLink("ABOUT", "About", new { controller = "Home" })</li>
                                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">@Html.ActionLink("CONTACT US", "Contact", new { controller = "Home" })</li>
                                             <!-- /end navigation menu -->
                                         </ul>
@@ -95,16 +95,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <!-- edit footer logo here -->
-                        <a href="#" class="logo"><img src="~/Content/images/rdkhomesolutions-logo2.png" alt="" /></a>
+                        <!-- begin newsletter form area -->
                         <div class="text">
+                            <div class="header">FOLLOW US</div>
+                            <a href="https://www.facebook.com/RDKHomeSolutions/" class="fa fa-facebook social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#3B5998;color:white;" target="_blank"></a>
+                            <a href="https://www.instagram.com/RDKHomeSolutions/" class="fa fa-instagram social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#125688;color:white;" target="_blank"></a>
                         </div>
+                        <!-- /end newsletter form area -->
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <!-- begin disclaimer here -->
                         <div class="text">
                             <div class="header">QUICK LINK</div>
                             <ul class="quick-links">
+                                <li>@Html.ActionLink("About", "About", new { controller = "Home" })</li>
                                 <li>@Html.ActionLink("Contact", "Contact", new { controller = "Home" })</li>
                             </ul>
                         </div>
@@ -121,7 +125,7 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope"></i>
-                                    info@rdkhomesolutions.com
+                                    info@RDKHomeSolutions.com
                                 </li>
                             </ul>
                         </div>
@@ -130,8 +134,10 @@
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <!-- begin newsletter form area -->
                         <div class="text">
-                            <div class="header">FOLLOW US</div>
-                            <a href="https://www.facebook.com/RDKHomeSolutions/" class="fa fa-facebook social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#3B5998;color:white;" target="_blank"></a>
+                            <div class="header">News Letter</div>
+                            <p>
+                                Subscribe to our news letter for upcoming properties and access to our recommended trades.
+                            </p>
                         </div>
                         <!-- /end newsletter form area -->
                     </div>

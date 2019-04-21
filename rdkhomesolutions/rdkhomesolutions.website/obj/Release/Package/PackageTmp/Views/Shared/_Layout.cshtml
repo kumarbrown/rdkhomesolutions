@@ -49,11 +49,11 @@
                         <div class="container">
                             <div class="logo clearfix">
                                 <!-- insert header logo here -->
-                                <a href="index.html" id="logo"><img class="img-responsive" src="~/Content/images/rdkhomesolutions-logo.png" alt="" /></a>
+                                <a href="index.html" id="logo"><img class="img-responsive" src="~/Content/images/RDKHomeSolutions-logo.png" alt="" /></a>
                             </div>
                             <div class="contacts_block">
                                 <!-- edit header address and phone number here -->
-                                <div class="tabLine">info@rdkhomesolutions.com</div>
+                                <div class="tabLine">info@RDKHomeSolutions.com</div>
                                 <div class="phoneNo styler_color"><i class="fa fa-phone"></i> 937.701.0088</div>
                                 <div class="clearfix"></div>
                             </div>
@@ -72,6 +72,7 @@
                                         <ul class="nav nav-pills">
                                             <!-- edit navigation menu -->
                                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("HOME", "Index", new { controller = "Home" })</li>
+                                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">@Html.ActionLink("ABOUT", "About", new { controller = "Home" })</li>
                                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">@Html.ActionLink("CONTACT US", "Contact", new { controller = "Home" })</li>
                                             <!-- /end navigation menu -->
                                         </ul>
@@ -96,7 +97,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <!-- edit footer logo here -->
-                        <a href="#" class="logo"><img src="~/Content/images/rdkhomesolutions-logo2.png" alt="" /></a>
+                        <a href="#" class="logo"><img src="~/Content/images/RDKHomeSolutions-logo2.png" alt="" /></a>
                         <div class="text">
                         </div>
                     </div>
@@ -121,7 +122,7 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope"></i>
-                                    info@rdkhomesolutions.com
+                                    info@RDKHomeSolutions.com
                                 </li>
                             </ul>
                         </div>
@@ -132,6 +133,7 @@
                         <div class="text">
                             <div class="header">FOLLOW US</div>
                             <a href="https://www.facebook.com/RDKHomeSolutions/" class="fa fa-facebook social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#3B5998;color:white;" target="_blank"></a>
+                            <a href="https://www.instagram.com/RDKHomeSolutions/" class="fa fa-instagram social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#125688;color:white;" target="_blank"></a>
                         </div>
                         <!-- /end newsletter form area -->
                     </div>

@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using Newtonsoft.Json;
 
-namespace rdkhomesolutions.website
+namespace RDKHomeSolutions.Website
 {
     public class ValidateGoogleCaptchaAttribute : ActionFilterAttribute
     {

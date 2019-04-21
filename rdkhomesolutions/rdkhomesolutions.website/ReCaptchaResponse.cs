@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Newtonsoft.Json;
 
-namespace rdkhomesolutions.website
+namespace RDKHomeSolutions.Website
 {
     internal class ReCaptchaResponse
     {

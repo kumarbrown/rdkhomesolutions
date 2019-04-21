@@ -1,5 +1,5 @@
 ﻿@using System.Web.UI.WebControls
-@model rdkhomesolutions.website.Models.ContactModel
+@model RDKHomeSolutions.Website.Models.ContactModel
 
 @{
     ViewBag.Title = "Contact";
@@ -26,7 +26,7 @@
                         </li>
                         <li>
                             <i class="fa fa-envelope"></i>
-                            info@rdkhomesolutions.com
+                            info@RDKHomeSolutions.com
                         </li>
                     </ul>
                 </div>
@@ -50,23 +50,23 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 @Html.TextBoxFor(x => x.FirstName, new { placeHolder = "First Name", @class = "form-control" })
-                                @Html.ValidationMessageFor(model => model.FirstName,"",new { @class = "text-danger" })
+                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 @Html.TextBoxFor(x => x.LastName, new { placeHolder = "Last Name", @class = "form-control" })
-                                @Html.ValidationMessageFor(model => model.LastName,"",new { @class = "text-danger" })
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         @Html.TextBoxFor(x => x.Email, new { placeHolder = "Email", @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.Email,"",new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
                     </div>
                     <div class="form-group">
                         @Html.TextAreaFor(x => x.Comment, new { placeHolder = "Your Comments", @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.Comment,"",new { @class = "text-danger" })
+                        @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
                     </div>
                     <div class="form-group">
                         @Html.GoogleCaptcha()
@@ -78,3 +78,4 @@
         </div>
     </div>
 </div>
+@Html.Partial("NewsLetter")

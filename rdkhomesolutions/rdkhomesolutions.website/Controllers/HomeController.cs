@@ -5,15 +5,20 @@ using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
-using rdkhomesolutions.website.Models;
+using RDKHomeSolutions.Website.Models;
 
-namespace rdkhomesolutions.website.Controllers
+namespace RDKHomeSolutions.Website.Controllers
 {
     public class HomeController : Controller
     {
         private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(typeof(HomeController));
         // GET: Home
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult About()
         {
             return View();
         }

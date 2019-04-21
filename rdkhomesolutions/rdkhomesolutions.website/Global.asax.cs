@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace rdkhomesolutions.website
+namespace RDKHomeSolutions.Website
 {
     public class MvcApplication : System.Web.HttpApplication
     {
