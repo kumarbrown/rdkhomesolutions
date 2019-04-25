@@ -25,7 +25,7 @@ namespace RDKHomeSolutions.Website2
                 "~/Scripts/library.js"
                 ));
 
-            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+            bundles.Add(new ScriptBundle("~/bundles/webapp").Include(
                 "~/Scripts/app/newsLetter.js"
             ));
 
@@ -39,9 +39,9 @@ namespace RDKHomeSolutions.Website2
 
             bundles.Add(new ScriptBundle("~/bundles/toastr").Include(
                 "~/Scripts/toastr.js",
-                "~/Scripts/toastrOptions.js"));
+                "~/Scripts/app/toastrOptions.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/appcss").Include(
                       "~/Content/css/bootstrap.css",
                       "~/Scripts/rs-plugin/css/settings.css",
                       "~/Content/css/site.css",

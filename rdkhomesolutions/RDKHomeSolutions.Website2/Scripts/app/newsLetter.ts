@@ -2,7 +2,7 @@
 /// <reference path="../typings/toastr/toastr.d.ts" />
 
 interface NewsLetterSubscribeResult {
-    success: boolean;
+    result: boolean;
     message: string;
 }
 
@@ -20,11 +20,11 @@ class NewsLetter {
             data: JSON.stringify({ email: emailAddress }),
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-            success: (result: NewsLetterSubscribeResult) => {
-                if (result.success) {
+            success: (newsLetterSubscribeResult: NewsLetterSubscribeResult) => {
+                if (newsLetterSubscribeResult.result) {
                     toastr.success('Thank you for subscribing to our news letter!', 'Success');
                 } else {
-                    toastr.error(result.message, 'Inconceivable!');
+                    toastr.error(newsLetterSubscribeResult.message, 'Error');
                 }
             },
             error: () => {

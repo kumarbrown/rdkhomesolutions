@@ -16,3 +16,4 @@ toastr.options = {
     showMethod: 'fadeIn',
     hideMethod: 'fadeOut'
 };
+//# sourceMappingURL=toastrOptions.js.map

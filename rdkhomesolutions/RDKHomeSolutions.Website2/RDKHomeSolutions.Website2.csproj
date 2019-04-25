@@ -182,6 +182,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsLetterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -189,6 +190,7 @@
     </Compile>
     <Compile Include="GoogleCaptchaHelper.cs" />
     <Compile Include="InvalidGoogleCaptchaHelper.cs" />
+    <Compile Include="JsonDotNetResult.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\NewsLetterSubscribeModel.cs" />
     <Compile Include="Models\ResultModel.cs" />
@@ -408,6 +410,7 @@
     </Content>
     <Content Include="Content\css\toastr\toastr.scss" />
     <Content Include="Content\css\toastr\toastr.less" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\function.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
