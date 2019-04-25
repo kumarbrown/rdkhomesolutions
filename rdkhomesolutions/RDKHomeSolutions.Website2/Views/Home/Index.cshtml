@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- begin slider -->
+<div class="fullwidthbanner-container" id="main_slider">
+    <div class="fullwidthbanner" style="visibility: hidden">
+        <ul>
+            <!-- slide 1 -->
+            <li class="slide1" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="300">
+                <!-- slide 1 image -->
+                <img alt="" src="~/Content/images/slide1b.jpg" />
+                <!-- slide 1 caption 1 parameters -->
+                <div class="caption sft" data-x="10" data-y="150" data-speed="2500" data-start="1000" data-easing="easeInBack">
+                    <!-- slide 1 caption 1 -->
+                    <p class="cap-1">
+                        7160 Dayton Liberty<br />
+                        <span class="price">$119,000</span>
+                    </p>
+                </div>
+            </li>
+            <!-- slide 2 -->
+            <li class="slide2" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="300">
+                <!-- slide 2 image -->
+                <img alt="" src="~/Content/images/slide2b.jpg" />
+                <!-- slide 2 caption 1 parameters -->
+                <div class="caption sft" data-x="10" data-y="150" data-speed="2500" data-start="1000" data-easing="easeInBack">
+                    <!-- slide 2 caption 1 -->
+                    <p class="cap-1">
+                        713 Burkhardt Ave<br />
+                        <span class="price">$110,000</span>
+                    </p>
+                </div>
+            </li>
+            <!-- slide 3 -->
+            @*<li class="slide2" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="300">
+                <!-- slide 3 image -->
+                <img alt="" src="~/Content/images/slide3b.jpg" />
+                <!-- slide 3 caption 1 parameters -->
+                <div class="caption sft" data-x="10" data-y="150" data-speed="2500" data-start="1000" data-easing="easeInBack">
+                    <!-- slide 3 caption 1 -->
+                    <p class="cap-1">
+                        5001 Marcy RD<br />
+                        <span class="price">$135,000</span>
+                    </p>
+                </div>
+            </li>*@
+        </ul>
+    </div>
+</div>
+<!-- /end slider -->
+<div class="promo-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-ms-12">
+                <!-- begin real estate agent's promo block -->
+                <div class="col-sm-8 col-ms-8">
+                    <!-- real estate agent's promo block text starts here -->
+                    <div class="promo-text">
+                        <div class="section-title styler_color">
+                            <h2><span class="normal">DISCOVER THE DEEPA</span> <span class="styler_color">STINNETT DIFFERENCE</span></h2>
+                        </div>
+                        <!-- edit real estate agent's promo block sub-heading here -->
+                        <h3>An Experienced Real Estate Pro You Can Trust </h3>
+                        <p>My sole mission is to make your buying or selling experience hassle free while working to get you the biggest return for your hard earned money. Whether you're: buying your first home, selling your existing home, relocating, upgrading or downsizing, you can depend on me to be there with you every step of the way.</p>
+                        <a href="https://deepastinnett.irongaterealtors.com/" class="button button-small styler_bg_color" target="_blank">Know More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-ms-4">
+                    <div class="promo-image">
+                        <!-- edit real estate agent's promo block image here -->
+                        <img class="img-responsive block-img" src="~/Content/images/img_6.png" alt="" />
+                        <img src="~/Content/images/signature2.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("NewsLetter")
+

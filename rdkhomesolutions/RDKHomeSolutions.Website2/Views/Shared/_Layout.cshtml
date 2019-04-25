@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDK Home Solutions</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="container" class="main">
+        <div id="out">
+            <div id="home_marker"></div>
+            <div id="header">
+                <div class="inner">
+                    <div class="top">
+                        <a href="#" class="scrollup"></a>
+                    </div>
+                    <div class="bottom">
+                        <div class="container">
+                            <div class="logo clearfix">
+                                <!-- insert header logo here -->
+                                <a href="index.html" id="logo"><img class="img-responsive" src="~/Content/images/RDKHomeSolutions-logo.png" alt="" /></a>
+                            </div>
+                            <div class="contacts_block">
+                                <!-- edit header address and phone number here -->
+                                <div class="tabLine">info@RDKHomeSolutions.com</div>
+                                <div class="phoneNo styler_color"><i class="fa fa-phone"></i> 937.701.0088</div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <!-- top navigation starts here -->
+                        <div id="top_menu" class="styler_bg_color">
+                            <div class="container">
+                                <div class="navbar">
+                                    <a class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="menu-btn-name">Menu</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </a>
+                                    <div class="navbar-collapse collapse">
+                                        <ul class="nav nav-pills">
+                                            <!-- edit navigation menu -->
+                                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("HOME", "Index", new { controller = "Home" })</li>
+                                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">@Html.ActionLink("ABOUT", "About", new { controller = "Home" })</li>
+                                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">@Html.ActionLink("CONTACT US", "Contact", new { controller = "Home" })</li>
+                                            <!-- /end navigation menu -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper">
+                @RenderBody()
+            </div>
+            <div id="empty"></div>
+        </div>
+    </div>
+
+    <!-- begin footer -->
+    <div id="footer">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- begin newsletter form area -->
+                        <div class="text">
+                            <div class="header">FOLLOW US</div>
+                            <a href="https://www.facebook.com/RDKHomeSolutions/" class="fa fa-facebook social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#3B5998;color:white;" target="_blank"></a>
+                            <a href="https://www.instagram.com/RDKHomeSolutions/" class="fa fa-instagram social-icon-hover" style="padding:10px;font-size:15px;width:30px;text-align:center;text-decoration:none;margin:5px 2px;background:#125688;color:white;" target="_blank"></a>
+                        </div>
+                        <!-- /end newsletter form area -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- begin disclaimer here -->
+                        <div class="text">
+                            <div class="header">QUICK LINK</div>
+                            <ul class="quick-links">
+                                <li>@Html.ActionLink("About", "About", new { controller = "Home" })</li>
+                                <li>@Html.ActionLink("Contact", "Contact", new { controller = "Home" })</li>
+                            </ul>
+                        </div>
+                        <!-- /end disclaimer -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- begin newsletter form area -->
+                        <div class="text">
+                            <div class="header">CONTACT INFO</div>
+                            <ul class="foot-address">
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    p. 937.701.0088
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    info@RDKHomeSolutions.com
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /end newsletter form area -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <!-- begin newsletter form area -->
+                        <div class="text">
+                            <div class="header">News Letter</div>
+                            <p>
+                                Subscribe to our news letter for upcoming properties and access to our recommended trades.
+                            </p>
+                        </div>
+                        <!-- /end newsletter form area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <!-- edit copyright notice here -->
+                    <div class="copyrights">RDK Home Solutions LLC Copyright @DateTime.Now.Year</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /end footer -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquerymigrate")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/carousel")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/app")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
